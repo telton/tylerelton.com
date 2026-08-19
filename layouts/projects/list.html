@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+<section class="content">
+  <div class="container">
+    <header class="post-header">
+      <h1 class="post-title">Projects</h1>
+      <div class="post-meta">$ ls -la projects/</div>
+    </header>
+
+    <!-- Featured -->
+    <div class="section-header" style="margin-bottom: var(--space-xl);">
+      <h2 class="section-title" style="font-size: 1.2rem;">Active</h2>
+      <span class="section-meta">git status</span>
+    </div>
+
+    <div class="project-grid" style="margin-bottom: var(--space-3xl);">
+      {{ range hugo.Data.projects.featured }}
+      <article class="project-item featured">
+        <div class="project-header">
+          <span class="project-name"><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a></span>
+          <span class="project-lang">{{ .language }}</span>
+        </div>
+        <p class="project-desc">{{ .description }}</p>
+        <div class="project-meta">
+          <span class="project-status active">Active</span>
+          {{ if .stack }} — {{ .stack }}{{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+
+    <!-- Archived -->
+    <div class="section-header" style="margin-bottom: var(--space-xl);">
+      <h2 class="section-title" style="font-size: 1.2rem;">Previously</h2>
+      <span class="section-meta">git log --oneline</span>
+    </div>
+
+    <div class="project-grid">
+      {{ range hugo.Data.projects.archived }}
+      <article class="project-item">
+        <div class="project-header">
+          <span class="project-name">{{ .name }}</span>
+          <span class="project-lang">{{ .language }}</span>
+        </div>
+        <p class="project-desc">{{ .description }}</p>
+        <div class="project-meta">
+          <span class="project-status">Archived</span>
+          {{ if .stack }} — {{ .stack }}{{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+
+{{ end }}

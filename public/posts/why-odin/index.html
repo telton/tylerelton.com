@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Senior software engineer. Building in Go and Odin.">
+  <meta name="author" content="Tyler Elton">
+
+  <title>Why I Write My Games in Odin — Tyler Elton</title>
+
+  <link rel="canonical" href="http://localhost:1313/posts/why-odin/">
+  <link rel="stylesheet" href="/css/site.css">
+
+  
+  <meta property="og:url" content="http://localhost:1313/posts/why-odin/">
+  <meta property="og:site_name" content="Tyler Elton">
+  <meta property="og:title" content="Why I Write My Games in Odin">
+  
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2026-08-15">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Why I Write My Games in Odin">
+
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⌘%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header-inner">
+        <a href="/" class="site-brand" aria-label="Home">tylerelton.com</a>
+        <nav class="site-nav" aria-label="Primary">
+          
+            <a href="/posts/">Writing</a>
+          
+            <a href="/projects/">Projects</a>
+          
+            <a href="/about/">About</a>
+          
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+            <span id="theme-label">light</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+
+<article class="content">
+  <div class="container container-narrow">
+    <header class="post-header">
+      <h1 class="post-title">Why I Write My Games in Odin</h1>
+      
+      <div class="post-meta">
+        <time datetime="2026-08-15">August 15, 2026</time>
+         — #odin, #game-dev, #systems
+         — 345 words
+      </div>
+      
+    </header>
+
+    <div class="post-body">
+      <p>Every few months someone asks me why I don&rsquo;t just use Unity or Godot for my game projects. The honest answer is that I tried, and I kept bumping into walls I couldn&rsquo;t see through.</p>
+<h2 id="the-problem-with-engines">The Problem with Engines</h2>
+<p>Unity and Godot are incredible tools. They let you build complex games quickly, and they&rsquo;ve democratized game development in ways that are genuinely important. But they&rsquo;re also <strong>opaque</strong>. When something breaks, you&rsquo;re debugging someone else&rsquo;s abstractions. When performance tanks, you&rsquo;re guessing at what the engine is doing under the hood.</p>
+<p>I don&rsquo;t like guessing. I like knowing.</p>
+<h2 id="odin--raylib">Odin + raylib</h2>
+<p>Odin is a systems language with a C-like feel and modern conveniences. It has explicit memory management, minimal runtime overhead, and a syntax that feels like it was designed by someone who actually writes code. The built-in <code>core:</code> and <code>vendor:</code> packages cover most of what you need without pulling in a massive ecosystem.</p>
+<p>raylib is a C library for game development that&rsquo;s deliberately simple. No scene graph. No component system. Just a window, some shapes, textures, and input. It gives you enough to build anything, and little enough that you understand every piece.</p>
+<p>Together, they feel like a well-configured terminal: everything is where you expect it, nothing is hiding from you.</p>
+<h2 id="what-this-actually-looks-like">What This Actually Looks Like</h2>
+<p>My current project, <strong>fimbul</strong>, is built entirely in Odin with raylib. I handle my own ECS (entity-component-system), my own audio synthesis, my own world generation. When something doesn&rsquo;t work, I know exactly where to look because I wrote every layer.</p>
+<p>That&rsquo;s not romanticism — it&rsquo;s pragmatism. The time I &ldquo;lose&rdquo; not using a pre-built engine I gain back tenfold in debuggability and mental model clarity.</p>
+<h2 id="the-real-reason">The Real Reason</h2>
+<p>There&rsquo;s also something else: <strong>joy</strong>. Writing a game in Odin feels like building something with your hands. You feel the weight of every decision. The memory layout matters. The draw order matters. Nothing is free, and nothing is hidden.</p>
+<p>That&rsquo;s not for everyone. But it&rsquo;s for me.</p>
+<h2 id="for-the-curious">For the Curious</h2>
+<ul>
+<li><a href="https://odin-lang.org">Odin Language</a></li>
+<li><a href="https://www.raylib.com">raylib</a></li>
+<li>My dotfiles (for the Lua/Tmux/Neovim setup I use): <a href="https://github.com/telton/dotfiles">@telton/dotfiles</a></li>
+</ul>
+
+    </div>
+
+    
+    <footer style="margin-top: var(--space-3xl); padding-top: var(--space-xl); border-top: 1px solid var(--border);">
+      <p class="text-muted" style="font-family: var(--font-mono); font-size: 0.8rem;">
+        <a href="/posts/">← All writing</a>
+      </p>
+    </footer>
+    
+  </div>
+</article>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer-inner">
+        <p class="footer-copy">Tyler Elton — 2026</p>
+        <div class="footer-links">
+          <a href="https://github.com/telton" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/tyler-elton-56b054142/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="/index.xml">RSS</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/theme.js"></script>
+</body>
+</html>

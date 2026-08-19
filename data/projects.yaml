@@ -1,0 +1,36 @@
+featured:
+  - name: polaris
+    description: Chart your own stars.
+    language: Go
+    stack: Go / Wails / Svelte
+    url: https://github.com/telton/polaris
+    status: active
+
+  - name: fimbul
+    description: A traditional roguelike inspired by Norse mythology.
+    language: Odin
+    stack: Odin / SDL3
+    url: ""
+    status: active
+
+archived:
+  - name: argus
+    description: A cloud-native, real-time security event correlation engine.
+    language: Go
+    stack: Go
+    url: ""
+    status: archived
+
+  - name: feanor
+    description: Distributed secrets management.
+    language: Go
+    stack: Go
+    url: ""
+    status: archived
+
+  - name: vtt
+    description: A virtual tabletop application with modular ruleset support.
+    language: Go
+    stack: Go / ConnectRPC / Protocol Buffers
+    url: ""
+    status: archived

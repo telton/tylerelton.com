@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+	"devDependencies": {
+		"@playwright/mcp": "^0.0.79",
+		"wrangler": "^4.123.0"
+	}
+}

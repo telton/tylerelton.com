@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Go on Tyler Elton</title>
+		<link>http://localhost:1313/tags/go/</link>
+		<description>Recent content in Go on Tyler Elton</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>From PHP to Go: Eight Years Later</title>
+				<link>http://localhost:1313/posts/php-to-go/</link>
+				<pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/php-to-go/</guid>
+				<description>My journey from PHP to Go, what I&amp;rsquo;ve learned along the way, and what I value in a language now.</description>
+			</item>
+			<item>
+				<title>Building Polaris: A Wails3 Desktop App</title>
+				<link>http://localhost:1313/posts/building-polaris/</link>
+				<pubDate>Sat, 01 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/building-polaris/</guid>
+				<description>Why I chose Wails3 for my latest project, and what building a desktop app in Go looks like in 2026.</description>
+			</item>
+	</channel>
+</rss>
