@@ -1,8 +1,22 @@
 {
+  "name": "tylerelton.com",
+  "version": "1.0.0",
+  "description": "Tyler's personal site",
   "scripts": {
     "deploy": "wrangler deploy"
   },
-	"devDependencies": {
+  "keywords": [],
+  "author": "Tyler Elton <telton007@gmail.com>",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.21.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
 		"@playwright/mcp": "^0.0.79",
 		"wrangler": "^4.123.0"
 	}
