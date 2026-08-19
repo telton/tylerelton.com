@@ -7,3 +7,6 @@ command = "hugo --gc --minify"
 [assets]
 directory = "./public"
 not_found_handling = "404-page"
+
+[vars]
+HUGO_VERSION = "0.164.0"
