@@ -1,17 +1,164 @@
-<!doctype html><html lang=en data-theme=dark><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Senior software engineer. Building in Go and Odin."><meta name=author content="Tyler Elton"><title>Projects — Tyler Elton</title><link rel=canonical href=https://tylerelton.com/projects/><link rel=alternate type=application/rss+xml href=https://tylerelton.com/projects/index.xml title="Tyler Elton"><link rel=stylesheet href=/css/site.css><meta property="og:url" content="https://tylerelton.com/projects/"><meta property="og:site_name" content="Tyler Elton"><meta property="og:title" content="Projects"><meta property="og:type" content="website"><meta name=twitter:card content="summary"><meta name=twitter:title content="Projects"><link rel=icon type=image/svg+xml href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⌘%3C/text%3E%3C/svg%3E"></head><body><a href=#main-content class=skip-link>Skip to content</a><header class=site-header><div class=container><div class=site-header-inner><a href=/ class=site-brand aria-label=Home>tylerelton.com</a><nav class=site-nav aria-label=Primary><a href=/posts/>Writing</a>
-<a href=/projects/>Projects</a>
-<a href=/about/>About</a>
-<button id=theme-toggle class=theme-toggle aria-label="Toggle color theme">
-<span id=theme-label>light</span></button></nav></div></div></header><main id=main-content><section class=content><div class=container><header class=post-header><h1 class=post-title>Projects</h1><div class=post-meta>$ ls -la projects/</div></header><div class=section-header style=margin-bottom:var(--space-xl)><h2 class=section-title style=font-size:1.2rem>Active</h2><span class=section-meta>git status</span></div><div class=project-grid style=margin-bottom:var(--space-3xl)><article class="project-item featured"><div class=project-header><span class=project-name><a href=https://github.com/telton/polaris target=_blank rel="noopener noreferrer">polaris</a></span>
-<span class=project-lang>Go</span></div><p class=project-desc>Chart your own stars.</p><div class=project-meta><span class="project-status active">Active</span>
-— Go / Wails / Svelte</div></article><article class="project-item featured"><div class=project-header><span class=project-name><a href target=_blank rel="noopener noreferrer">fimbul</a></span>
-<span class=project-lang>Odin</span></div><p class=project-desc>A traditional roguelike inspired by Norse mythology.</p><div class=project-meta><span class="project-status active">Active</span>
-— Odin / SDL3</div></article></div><div class=section-header style=margin-bottom:var(--space-xl)><h2 class=section-title style=font-size:1.2rem>Previously</h2><span class=section-meta>git log --oneline</span></div><div class=project-grid><article class=project-item><div class=project-header><span class=project-name>argus</span>
-<span class=project-lang>Go</span></div><p class=project-desc>A cloud-native, real-time security event correlation engine.</p><div class=project-meta><span class=project-status>Archived</span>
-— Go</div></article><article class=project-item><div class=project-header><span class=project-name>feanor</span>
-<span class=project-lang>Go</span></div><p class=project-desc>Distributed secrets management.</p><div class=project-meta><span class=project-status>Archived</span>
-— Go</div></article><article class=project-item><div class=project-header><span class=project-name>vtt</span>
-<span class=project-lang>Go</span></div><p class=project-desc>A virtual tabletop application with modular ruleset support.</p><div class=project-meta><span class=project-status>Archived</span>
-— Go / ConnectRPC / Protocol Buffers</div></article></div></div></section></main><footer class=site-footer><div class=container><div class=site-footer-inner><p class=footer-copy>Tyler Elton — 2026</p><div class=footer-links><a href=https://github.com/telton target=_blank rel="noopener noreferrer">GitHub</a>
-<a href=https://www.linkedin.com/in/tyler-elton-56b054142/ target=_blank rel="noopener noreferrer">LinkedIn</a>
-<a href=/index.xml>RSS</a></div></div></div></footer><script src=/js/theme.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Senior software engineer. Building in Go and Odin.">
+  <meta name="author" content="Tyler Elton">
+
+  <title>Projects — Tyler Elton</title>
+
+  <link rel="canonical" href="https://tylerelton.com/projects/">
+  <link rel="alternate" type="application/rss&#43;xml" href="https://tylerelton.com/projects/index.xml" title="Tyler Elton">
+  <link rel="stylesheet" href="/css/site.css">
+
+  
+  <meta property="og:url" content="https://tylerelton.com/projects/">
+  <meta property="og:site_name" content="Tyler Elton">
+  <meta property="og:title" content="Projects">
+  
+    <meta property="og:type" content="website">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Projects">
+
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⌘%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header-inner">
+        <a href="/" class="site-brand" aria-label="Home">tylerelton.com</a>
+        <nav class="site-nav" aria-label="Primary">
+          
+            <a href="/posts/">Writing</a>
+          
+            <a href="/projects/">Projects</a>
+          
+            <a href="/about/">About</a>
+          
+          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme" title="Toggle color theme">
+            <svg id="theme-icon-moon" class="theme-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg id="theme-icon-sun" class="theme-icon hidden" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <span class="visually-hidden">Toggle color theme</span>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+
+<section class="content">
+  <div class="container">
+    <header class="post-header">
+      <h1 class="post-title">Projects</h1>
+      <div class="post-meta">$ ls -la projects/</div>
+    </header>
+
+    
+    <div class="section-header" style="margin-bottom: var(--space-xl);">
+      <h2 class="section-title" style="font-size: 1.2rem;">Active</h2>
+      <span class="section-meta">git status</span>
+    </div>
+
+    <div class="project-grid" style="margin-bottom: var(--space-3xl);">
+      
+      <article class="project-item featured">
+        <div class="project-header">
+          <span class="project-name"><a href="https://github.com/telton/polaris" target="_blank" rel="noopener noreferrer">polaris</a></span>
+          <span class="project-lang">Go</span>
+        </div>
+        <p class="project-desc">An open-source notes app built around data sovereignty. Chart your own stars</p>
+        <div class="project-meta">
+          <span class="project-status active">Active</span>
+           — Go / Wails / Svelte
+        </div>
+      </article>
+      
+      <article class="project-item featured">
+        <div class="project-header">
+          <span class="project-name"><a href="" target="_blank" rel="noopener noreferrer">fimbul</a></span>
+          <span class="project-lang">Odin</span>
+        </div>
+        <p class="project-desc">A traditional roguelike inspired by Norse mythology.</p>
+        <div class="project-meta">
+          <span class="project-status active">Active</span>
+           — Odin / SDL3
+        </div>
+      </article>
+      
+    </div>
+
+    
+    <div class="section-header" style="margin-bottom: var(--space-xl);">
+      <h2 class="section-title" style="font-size: 1.2rem;">Previously</h2>
+      <span class="section-meta">git log --oneline</span>
+    </div>
+
+    <div class="project-grid">
+      
+      <article class="project-item">
+        <div class="project-header">
+          <span class="project-name">argus</span>
+          <span class="project-lang">Go</span>
+        </div>
+        <p class="project-desc">A cloud-native, real-time security event correlation engine.</p>
+        <div class="project-meta">
+          <span class="project-status">Archived</span>
+           — Go
+        </div>
+      </article>
+      
+      <article class="project-item">
+        <div class="project-header">
+          <span class="project-name">feanor</span>
+          <span class="project-lang">Go</span>
+        </div>
+        <p class="project-desc">Distributed secrets management for service-oriented architectures.</p>
+        <div class="project-meta">
+          <span class="project-status">Archived</span>
+           — Go
+        </div>
+      </article>
+      
+      <article class="project-item">
+        <div class="project-header">
+          <span class="project-name">vtt</span>
+          <span class="project-lang">Go</span>
+        </div>
+        <p class="project-desc">A virtual tabletop application with modular ruleset support.</p>
+        <div class="project-meta">
+          <span class="project-status">Archived</span>
+           — Go / ConnectRPC / Protocol Buffers
+        </div>
+      </article>
+      
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer-inner">
+        <p class="footer-copy">Tyler Elton — 2026</p>
+        <div class="footer-links">
+          <a href="https://github.com/telton" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/tyler-elton-56b054142/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="/index.xml">RSS</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/theme.js"></script>
+</body>
+</html>

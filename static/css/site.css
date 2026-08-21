@@ -80,6 +80,7 @@ body {
   line-height: var(--line-height);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -189,6 +190,8 @@ pre code {
   align-items: center;
   justify-content: space-between;
   height: 60px;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
 }
 
 .site-brand {
@@ -228,14 +231,15 @@ pre code {
 }
 
 .theme-toggle {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
   color: var(--fg-muted);
   background: none;
   border: 1px solid var(--border);
-  padding: var(--space-xs) var(--space-sm);
+  padding: 0;
   cursor: pointer;
   transition: border-color var(--transition-fast), color var(--transition-fast);
 }
@@ -248,6 +252,16 @@ pre code {
 .theme-toggle:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+.theme-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.theme-icon.hidden {
+  display: none;
 }
 
 .hero {
@@ -605,15 +619,32 @@ pre code {
 
 @media (max-width: 640px) {
   .site-header-inner {
-    height: 52px;
+    height: auto;
+    min-height: 52px;
+    padding: var(--space-sm) 0;
+    gap: var(--space-md);
   }
 
   .site-nav {
     gap: var(--space-md);
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .site-nav a {
     padding: var(--space-xs) var(--space-xs);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+  }
+
+  .theme-toggle {
+    width: 32px;
+    height: 32px;
+  }
+
+  .theme-icon {
+    width: 16px;
+    height: 16px;
   }
 
   .hero {
@@ -625,6 +656,12 @@ pre code {
   }
 
   .hero-meta dl {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 90px 1fr;
+  }
+
+  .site-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
   }
 }

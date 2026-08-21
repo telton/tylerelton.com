@@ -1,6 +1,6 @@
 featured:
   - name: polaris
-    description: Chart your own stars.
+    description: An open-source notes app built around data sovereignty. Chart your own stars
     language: Go
     stack: Go / Wails / Svelte
     url: https://github.com/telton/polaris
@@ -22,7 +22,7 @@ archived:
     status: archived
 
   - name: feanor
-    description: Distributed secrets management.
+    description: Distributed secrets management for service-oriented architectures.
     language: Go
     stack: Go
     url: ""

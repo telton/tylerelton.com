@@ -7,7 +7,8 @@
 
   const root = document.documentElement;
   const toggleBtn = document.getElementById('theme-toggle');
-  const toggleLabel = document.getElementById('theme-label');
+  const moonIcon = document.getElementById('theme-icon-moon');
+  const sunIcon = document.getElementById('theme-icon-sun');
 
   function getSystemTheme() {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? DARK : LIGHT;
@@ -27,10 +28,23 @@
     } catch (_) {}
   }
 
+  function updateIcons(theme) {
+    if (!moonIcon || !sunIcon) return;
+    if (theme === DARK) {
+      moonIcon.classList.remove('hidden');
+      sunIcon.classList.add('hidden');
+    } else {
+      moonIcon.classList.add('hidden');
+      sunIcon.classList.remove('hidden');
+    }
+  }
+
   function applyTheme(theme) {
     root.setAttribute('data-theme', theme);
-    if (toggleLabel) {
-      toggleLabel.textContent = theme === DARK ? 'light' : 'dark';
+    updateIcons(theme);
+    if (toggleBtn) {
+      toggleBtn.setAttribute('aria-label', 'Switch to ' + (theme === DARK ? 'light' : 'dark') + ' mode');
+      toggleBtn.setAttribute('title', 'Switch to ' + (theme === DARK ? 'light' : 'dark') + ' mode');
     }
   }
 
