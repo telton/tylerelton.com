@@ -1,2 +1,5 @@
 .direnv/
+.hugo_build.lock
 node_modules/
+public/
+resources/
