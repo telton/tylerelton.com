@@ -382,7 +382,6 @@ pre code {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--fg-dim);
-  text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: var(--space-sm);
 }

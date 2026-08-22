@@ -88,7 +88,7 @@
         <div class="post-item-meta">
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
           {{ if .Params.tags }}
-            — {{ range $i, $tag := .Params.tags }}{{ if $i }}, {{ end }}{{ $tag }}{{ end }}
+            — {{ range $i, $tag := .Params.tags }}{{ if $i }}, {{ end }}#{{ $tag }}{{ end }}
           {{ end }}
         </div>
         {{ if .Summary }}
